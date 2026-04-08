@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Using Different Units of Measurement</title>
+  </head>
+  <body style="font-size: 16px;">
+
+
+    <!-- Example 1: px (Pixels) -->
+    <p style="font-size: 20px;">
+      This paragraph uses a font-size of 20px. Pixels are an absolute unit,
+      meaning the size remains constant across different screen sizes.
+    </p>
+
+    <div style="width: 200px; background-color: green;">
+      Div with a fixed width of 200px
+    </div>
+
+    <div style="width: 50%; background-color: aqua;">
+      Div with a relative width of 50%
+    </div>
+
+
+    <!-- Example 2: rem (Root Em) --->
+    <P style="font-size: 1.5rem;">
+      This paragraph uses a font-size of 1.5rem, which is relative to the root
+      element's (body) font size (16px). So 1.5rem = 24px.
+    </P>
+
+
+     <!-- Example 3: em (Relative to Parent) -->
+    <div style="font-size: 20px;">
+      Parent element font-size: 20px.
+      <p style="font-size: 1.5em;">
+        This child paragraph has a font-size of 1.5em, relative to the parent
+        (20px). So 1.5em = 30px.
+      </p>
+    </div>
+
+
+    <!-- Example 4: vh (Viewport Height) -->
+    <div style="height: 50vh; background-color: beige;">
+      This div takes up 50% of the viewport height, as 50vh equals half the
+      height of the browser window.
+    </div>
+
+
+    <!-- Example 5: vw (Viewport Width) -->
+    <div style="width: 30vw; background-color: aquamarine;">
+      This p takes up 30% of the viewport width, as 50vw equals half the width
+      of the browser window.
+    </div>
+
+
+    <!-- Example 5: vh & vw (Viewport Height & Viewport Width) -->
+    <p style="height: 50vh; width: 30vw; background-color: yellow; text-align: justify ;">
+      This p takes up 50% of the viewport height, as 50vh equals half the height of the browser window and 30% of the 
+      viewport width, as 50vw equals half the width of the browser window.
+    </p>
+  </body>
+</html>
