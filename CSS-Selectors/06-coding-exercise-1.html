@@ -1,0 +1,38 @@
+<!-- 
+1. Start with the provided HTML structure.
+
+2. Style the elements according to the following descriptions without directly referencing the CSS syntax in the instructions:
+        - Style the paragraphs within the section to have a font size of 16 pixels.
+        - Ensure the list item immediately following the first list item within the unordered list has bold text.
+        - Apply a background color of light gray to all list items after the second one within the same unordered list.
+        - Set the font color of the heading inside the article to blue.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Combinator Selectors Exercise</title>
+    <style>
+        /* Add your CSS styles here */
+        section p {font-size:16;}
+        ul li+li {font-weight: bold;}            /*This will skip the 1st li item*/
+        ul li:nth-child(2) ~ li{background-color:lightgrey;}       /*nth child startes from 2nd li and after 2nd li this list will get applied to every li items */ 
+        article>h2 {color: blue;}
+    </style>
+</head>
+<body>
+    <section>
+        <p>This is a paragraph within a section.</p>
+        <article>
+            <h2>Article Heading</h2>
+            <p>Another paragraph, this time within an article.</p>
+        </article>
+    </section>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+    </ul>
+</body>
+</html>

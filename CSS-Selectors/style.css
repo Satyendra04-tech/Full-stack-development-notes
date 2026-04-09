@@ -1,0 +1,14 @@
+p {font-size: 20px;}
+
+div{background-color: skyblue}
+
+h1{font-size: 30px; color: red;}
+
+#blue-para{color: blue;}
+
+.blue-bg{background-color: skyblue;}
+.yellow-bg{background-color: yellow;}
+
+.brown-text{color: brown;}
+
+*{text-align: center; color:green}

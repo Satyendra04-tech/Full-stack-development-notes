@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Combinator Selectors in CSS</title>
+    <style>
+      div p{color: blue;}               /* Descendant Selector (space): Targets any <p> inside a <div>, regardless of depth */
+      div > p{font-weight: bold;}         /* Child Selector (>): Targets only direct child <p> of a <div> */
+      h2 + p{color: green;}             /* Adjacent Sibling Selector (+): Targets the <p> immediately following an <h2> */
+      h2 ~ p{background-color: lightgray;}              /* General Sibling Selector (~): Targets all <p> siblings after an <h2> */
+      a.highlighted {background-color: yellow; font-weight: bold;}    /* Combination of element and class: a.highlighted */
+    </style>
+  <body>
+    <h1>Combinator Selectors in CSS</h1>
+
+
+
+    <!-- Descendant Selector Example -->
+     <div>
+      <h2>Descendant Selector</h2>
+
+      <!-- This will be blue because it's a <p> inside a <div> -->
+      <p>Descendant of the div.</p>
+
+      <!-- Nested <div> with <p>, still a descendant -->
+      <div>
+        <p>Nested paragraph descendant of the outer div.</p>
+      </div>
+    </div>
+
+
+
+
+    <!-- Child Selector Example -->
+     <div>
+      <h2>Child Selector (>)</h2>
+
+      <!-- This will be bold because it's a direct child of the <div> -->
+      <p>Direct child of the div and will be bold.</p>
+
+      <!-- This won't be affected because it's nested, not a direct child -->
+      <div>
+        <p>Not a direct child.</p>
+      </div>
+    </div>
+
+
+
+
+    <!-- Adjacent Sibling Selector Example -->
+    <h2>Adjacent Sibling Selector (+)</h2>
+
+    <!-- This will be green because it's the immediate sibling of the <h2> -->
+    <p>Adjacent sibling of the previous h2.</p>
+
+    <!-- This won't be affected because it's not immediately after the <h2> -->
+    <p>Not an adjacent sibling of the previous h2.</p>
+
+
+
+
+    <!-- General Sibling Selector Example -->
+    <h2>General Sibling Selector (~)</h2>
+    <!-- All these <p> elements after <h2> will have a lightgray background -->
+    <p>General sibling of the h2.</p>
+    <p>Also a general sibling of the h2.</p>
+
+
+
+    
+    <!-- Highlighted class will only apply to this element -->
+    <a href="https://www.example.com" class="highlighted">Highlighted Link</a>
+    <!-- This will not be highlighted -->
+    <p class="highlighted">Highlighted Link</a>
+
+  </body>
+  </head>
+    

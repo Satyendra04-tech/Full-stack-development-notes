@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Id, Class and Universal Selectors</title>
+    
+    <link rel="stylesheet" href="./style.css" />        
+  </head>
+  <body>
+    <p>This paragraph uses font-size of 20 px</p>
+
+    <!-- ID selectors are exclusive to only one element that means one id is assigned to one element in a page
+    and the same page cannot have any other id with "blue-para".
+    - We can target the ID and assign some styles to "blue-para" in style.css sheet such "#blue-para{color:red:}" and this property is
+    only applied to <p> element wiht id blue-para.
+    - The name of an ID should always start with an aplhabet and it can have _ and - 
+    -->
+    <p id="blue-para">This paragraph uses font-size of 20 px</p>
+
+
+
+    <!-- CLASS-SELECTORS-->
+    <!-- Class selectors are same as ID selectors but class selectors are not unique. A class can be assigned to
+    multiple element of the same page.
+    - A class selector allows the multiple elements to share the same style.
+    - The name of an ID should always start with an aplhabet and it can have _ and -
+    - We can target the class and assign some styles to "blue-bg" in style.css sheet such ".blue-bg{background-color: skyblue;}" and 
+    this style is only applied to all the elements wiht class blue-bg.
+    -->
+    <div class="blue-bg">Div with skyblue background</div>
+    <h1 class="blue-bg">Heading with skyblue background</h1>    <!-- as we can see font-size 30px and text color red is automatically applied to this <h1> tag because in style.css we have a style for <h1> also. So both the styles (<h1> and blue-bg) got combined-->
+    
+      <!-- Elements can have more than one class also. There should be a space between class names -->
+     <h2 class="blue-bg brown-text">Heading with skyblue background and brown text</h2>
+
+     <!-- Here we have applied 2 different background colors to same element so now in style.css sheet whichever
+      background color is mentioned after will be applied. In style.css sheet yellow background is after skyblue background so in
+     <h2> yellow background will be applied. If we place skyblue background after yellow, the <h2> will
+      have skyblue background. 
+     -->
+     <h2 class="blue-bg yellow-bg">Heading with skyblue and yellow background</h2>
+
+
+
+     <!-- UNIVERSAL-SELECTOR -->
+    <!-- A universal selector is applied to the whole HTML page on which tha stylesheet is attached
+        - We can target the Universal and assign some styles such as "*{text-align: center; color:green}" and this style
+          will get applied to the whole HTML page. 
+        - In the browser we can see that only those elements which did not have any color style got turned to green
+          because Universal selectors have low precedence. 
+      -->
+  
+    </body>
