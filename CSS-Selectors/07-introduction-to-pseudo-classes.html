@@ -1,0 +1,38 @@
+<!-- 
+ A pseudo-class in CSS is a keyword used to target and style elements in a specific state or condition, 
+ such as :hover for when an element is hovered over or :focus when an input element is selected.
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introduction To Pseudo-Classes</title>
+  <style>
+
+    a:link{color: blue; text-decoration: none;}              /* Unvisited link */
+    a:visited{color: green;}                                /* Visited link */
+    a:hover{ color: red; text-decoration: underline;}       /* Link on hover */
+    a:active{color: orange;}                                /* Active link (while clicking) */
+    .hover-div{background-color: green; color: white; padding: 25px; text-align: center;}
+    .hover-div:hover{background-color: blue;}
+
+  </style>
+  </head>
+  <body>
+    <!-- Example links demonstrating different pseudo-classes -->
+     <a href="https://www.example.com">Unvisited Link</a>
+     <br />
+    <a href="https://www.example1.com">Visited Link (Clicked Before)</a>
+
+    
+    <!-- Hover and click effect link -->
+      <br />
+    <a href="https://www.example2.com">Hover or Click Me</a>
+
+    
+    <!-- Hover can also be applied to Div not just the achor tags  -->
+    <div class="hover-div">Mouse Over Me</div>
+  </body>
+
+
+</html>

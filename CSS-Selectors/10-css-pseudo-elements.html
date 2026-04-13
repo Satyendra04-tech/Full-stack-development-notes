@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Pseudo-Elements Lecture</title>
+    <style>
+       /* ::before - Insert content before an element */
+       .before-example::before{
+        content: "Before:";
+        color: green;
+       }
+
+       /* ::after - Insert content after an element */
+       .after-example::after{
+        content: "After";
+        color: red;
+       }
+
+       /* ::first-letter - Style the first letter of a paragraph */
+       .first-letter-example::first-letter{
+        font-weight: bold;
+        font-size: 2rem;
+       }
+
+       /* ::first-line - Style the first line of a paragraph */
+       .first-line-example::first-line{
+        font-size: bold;
+        text-transform: lowercase;
+       }
+
+       /* ::marker - Style the bullet points in a list */
+       ul.marker-example li::marker{
+        color: purple;
+        font-size: 1.5rem;
+       }
+       ul.marker-example2 {
+        list-style-type: square;
+       }
+
+
+
+    </style>
+  </head>
+  <body>
+
+    <!-- 
+      Pseudo-elements in CSS are used to style specific parts of an element, like the first letter or line. They allow you to insert content or style certain sections without modifying the HTML, such as with ::before, ::after, or   ::first-letter. 
+    -->
+
+    <h1>CSS Pseudo-Elements Lecture</h1>
+
+    <!-- ::before Example -->
+    <p class="before-example">This text has content inserted before it.</p>
+
+
+    <!-- ::after Example -->
+    <p class="after-example">This text has content inserted after it</p>
+
+
+    <!-- ::first-letter Example -->
+    <p class="first-letter-example">
+      This paragraph has a larger first letter.
+    </p>
+
+
+    <!-- ::first-line Example -->
+    <p class="first-line-example">
+      This is an example of styling the first line of text in a paragraph. The
+      rest of the text remains unchanged.<br />
+      <!-- Artificially creating the second line -->
+      This is the second line
+    </p>
+
+
+    <!-- ::marker Example -->
+    <ul class="marker-example">
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+    </ul>
+
+    <ul class="marker-example2">
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+    </ul>
+
+
+    <!-- ::selection Example (select this text) -->
+    <p>Select some text in this paragraph to see the selection style.</p>
+  </body>
+</html>
