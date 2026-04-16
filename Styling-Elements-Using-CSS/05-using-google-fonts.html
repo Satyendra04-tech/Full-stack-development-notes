@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Using Google Fonts and Font Effects - CSS Lecture</title>
+
+    <!-- Step 1: Include a single Google font (Roboto) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Step 2: Include multiple Google fonts (Roboto and Open Sans) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Step 3: Include multiple font weights for the Roboto font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Step 4: Enabling Font Effects (using Google Font Effects - Fire and Neon) -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Sofia&effect=fire|neon"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Step 1: Applying a single Google font (Roboto) */
+      .single-font {
+        font-family: "Roboto", sans-serif;
+      }
+
+      /* Step 2: Applying multiple Google fonts (Roboto and Open Sans) */
+      .multi-font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+
+      .multi-font-open-sans {
+        font-family: "Open Sans", sans-serif;
+      }
+
+      /* Step 3: Applying multiple weights (Regular 400 and Bold 700 for Roboto) */
+      .font-weight-normal {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+      }
+
+      .font-weight-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+      }
+
+      /* Step 4: Applying Font Effects */
+      .font-effect-fire {
+        font-family: "Sofia", sans-serif;
+        font-size: 30px;
+      }
+
+      .font-effect-neon {
+        font-family: "Sofia", sans-serif;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Step 1: Applying a single Google font (Roboto) -->
+    <p class="single-font">This is using the Roboto font.</p>
+
+    <!-- Step 2: Applying multiple Google fonts -->
+    <p class="multi-font-roboto">This is using Roboto.</p>
+    <p class="multi-font-open-sans">This is using Open Sans.</p>
+
+    <!-- Step 3: Applying multiple font weights for Roboto -->
+    <p class="font-weight-normal">This is Roboto with normal weight (400).</p>
+    <p class="font-weight-bold">This is Roboto with bold weight (700).</p>
+
+    <!-- Step 4: Applying Font Effects (Fire and Neon) -->
+    <h1 class="font-effect-fire">Sofia on Fire</h1>
+    <h1 class="font-effect-neon">Sofia with Neon Effect</h1>
+  </body>
+</html>
