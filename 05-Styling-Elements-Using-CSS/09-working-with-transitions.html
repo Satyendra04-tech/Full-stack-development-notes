@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Transitions Lecture</title>
+  </head>
+  <style>
+    /* Box Styling */
+    .box{
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+      border: 2px solid #333;
+      cursor: pointer;
+      text-align: center;
+      padding: 20px;
+      }
+
+
+      /* Transition Properties Example */
+      .property-example{
+        transition-property: background-color, width;               /* Define which properties will transition */
+        transition-duration: 2s;                                    /* Time the transition will take */
+        transition-timing-function: ease-in-out;                    /* Speed curve for the transition */
+        transition-delay: 1s;                                       /* Delay before transition begins */
+      }
+
+      .property-example:hover{
+        background-color: antiquewhite;
+        width: 300px;
+      }
+
+      /* Transition Shorthand Example
+      The Sequesnce is = transition-property > transition-duration > transition-timing-function > transition-delay */
+      .shorthand-example{
+        transition: background-color 2s ease-in-out 0.5s, width 1s ease-in ;
+      }
+
+      .shorthand-example:hover{
+        background-color: lightgreen;
+        width: 400px;
+      }
+      
+      a{
+        font-size: 2rem;
+        border: 2px solid green ;
+      }
+  </style>
+  <body>
+    
+    <h1>CSS Transitions Demonstration</h1>
+
+    <!-- Demonstrating transition-property, duration, delay, and timing-function -->
+    <section>
+      <h2>Transition Properties Demonstration</h2>
+
+      <!-- Transition on background-color and width -->
+      <div class="box property-example">Hover over me!</div>
+    </section>
+
+    <!-- Demonstrating the shorthand transition property -->
+    <section>
+      <h2>Transition Shorthand Demonstration</h2>
+      <div class="box shorthand-example">Hover over me!</div>
+    </section>
+
+    <a title="Here we can get all the information regarding Transition" href="https://web.dev/learn/css/transitions" target="_blank">Transitions</a></br>
+
+
+    <!--Even though these transition properties working fine for us in google chrome browser but it turns out some of these properties
+    in CSS have other names in other browsers. SO to get this properties working in all the browsers we need browser specific codes.
+    We can write browser specific codes by using "https://autoprefixer.github.io/". This will prefix our codes which will male it work
+    in all browsers
+  -->
+  
+  </body>
+</html>

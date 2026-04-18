@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Box Model Demonstration</title>
+    <style>
+      .box-model {
+        text-align: center;
+        width: 300px;                                /* Content width */
+        padding: 20px;                               /* Padding inside the box */
+        border: 5px solid black;                   /* Border around the box */
+        margin: 30px;                                 /* Margin outside the box */
+        background-color: lightblue;                /* Content background color */
+      }
+
+      .different-properties{
+        background-color: aquamarine;            /* Content background color */
+        width: 300px;                              /* Content width */
+        text-align: center;
+        padding-top: 20px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        border-top: 5px solid red;
+        border-right: 7px dotted green;
+        border-bottom: 5px solid red;
+        border-left: 7px solid green;
+        margin: auto;                                /* Even if we resize the window auto will calculate  */
+      }
+
+      .shorthand{
+        background-color: aquamarine;                       /* Content background color */
+        width: 300px;                                         /* Content width */
+        text-align: center;
+        padding: 50px 30px 50px 30px;                        /* TRBL(Top, Right, Bottom, Left) */
+        border-width: 5px 10px 5px 10px;                    /* TRBL(Top, Right, Bottom, Left) */
+        border-style: solid dotted dashed double;           /* TRBL(Top, Right, Bottom, Left) */
+        border-color: red green pink blue;          /* TRBL(Top, Right, Bottom, Left) */
+        margin: 40px 50px 40px 50px;                          /* TRBL(Top, Right, Bottom, Left) */
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <!-- The total width of the element in dev tools is 350px  -->
+    <div class="box-model">Content Inside The Box</div>
+    <div class="different-properties">Content Inside The Box</div>
+    <div class="shorthand">Content Inside The Box</div>
+  </body>
+</html>

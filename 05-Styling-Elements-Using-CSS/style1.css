@@ -1,0 +1,30 @@
+/* Define CSS variables at the root level */
+
+:root{
+  --main-bg-color: white;
+  --main-text-color: black;
+  --accent-color: green;
+}
+
+/* Apply CSS variables */
+body{
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: "Arial", sans-serif;
+}
+
+.content p {
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
+}
+
+.themed-text {
+  background-color: var(--main-text-color);
+  color: var(--accent-color);
+}
+
+/* Hover example to demonstrate changing on interaction */
+.content p:hover {
+  background-color: var(--main-text-color);
+  color: var(--accent-color)
+}
