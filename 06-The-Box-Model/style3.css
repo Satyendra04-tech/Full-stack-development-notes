@@ -1,3 +1,4 @@
+/* Coding exercise 1 */
 #padding-box{
     padding-top: 10px;
     padding-right: 20px;
@@ -21,4 +22,57 @@
     margin-left: 30px;
     margin-right: 30px;
     margin: 20px 30px;
+}
+
+
+
+/* Coding exercise 2 */
+.block-div{
+    display: block;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+}
+
+.inline-div{
+    display: inline;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+}
+
+.inline-block-div{
+    display: inline-block;
+    background-color: red;
+    width: 50%;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+/* Coding exercise 3 */
+.rounded-div{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    padding: 20px;
+    margin: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 50px;
+}
+
+.shorthand-rounded-div{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 25px;
 }
