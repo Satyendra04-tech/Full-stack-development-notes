@@ -76,3 +76,95 @@
     margin: 20px;
     border-radius: 25px;
 }
+
+
+/* Coding exercise 4 */
+div {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+}
+
+.relative-div{
+    position: relative;
+    top: 20px;
+    right:20px;
+}
+
+.absolute-div{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.fixed-div{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+.sticky-div{
+    position: sticky;
+    top: 0px;
+}
+
+
+
+/* Coding exercise 5 */
+
+/* For styling purpose : Starts */
+div {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.parent-low, .parent-high {
+    background-color: blue;
+}
+
+.child-high, .child-low {
+    background-color: red;
+}
+
+.child-low{
+    top:60px;
+    left: 60px;
+}
+.child-low-2 {
+    background-color: green;
+}
+/* For styling purpose : Ends */
+
+
+.parent-low{
+    position: relative;
+    z-index: 1;
+}
+
+.child-high{
+    position: absolute;
+    z-index: 2;
+}
+
+.parent-high{
+    position: relative;
+    z-index: 1;
+}
+
+.child-low{
+    position: absolute;
+    z-index: 2;
+}
+
+.child-low-2{
+    position: absolute;
+    z-index: 1;
+}

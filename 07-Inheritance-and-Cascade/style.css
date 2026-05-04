@@ -1,0 +1,39 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* 1 */
+.source-order {
+    color: blue;
+}
+.source-order{
+    color: red;
+}
+
+/* 2 */
+p{
+    font-size: 20px;
+}
+.specificity {
+    font-size: 30px;
+}
+#specificity-example {
+    font-size: 40px;
+}
+
+/* 3 */
+.important-flag{
+    color: brown;
+}
+.important-flag{
+    color: green !important;
+}
+
+/* 4 */
+#cascade-example, .cascade-example {
+    background-color: aqua;
+}
+.cascade-example{
+    background-color: yellow !important;
+}
