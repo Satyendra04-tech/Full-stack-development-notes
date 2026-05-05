@@ -1,0 +1,17 @@
+/* Coding exercise 1 */
+
+@media (max-width:480px){
+    .responsive-box{background-color: lightblue;}
+}
+
+@media (min-width:481px) and (max-width:1024px) and (orientation:portrait ) {
+    .responsive-box{background-color: lightgreen;}
+}
+
+@media (min-width:481px) and (max-width:1024px) and (orientation:landscape) {
+    .responsive-box{background-color: lightpink;}
+}
+
+@media (min-width:1025px) {
+    .responsive-box{background-color: lightgrey;}
+}
