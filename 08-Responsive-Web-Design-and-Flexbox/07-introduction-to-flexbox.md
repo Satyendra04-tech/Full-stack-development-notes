@@ -73,7 +73,7 @@
 ## Align-items Along Vertical Axis  
   * ### The align-items property aligns flex items along the cross axis (vertical axis when the flex direction is row).
   
-  ![Align Items](./images/align-items.png)  
+  ![Align-items](./images/align-items.png)  
 
 * <b>stretch (default):</b> Items stretch to fill the container along the cross axis. 
 * <b>flex-start:</b> Items are aligned to the start of the cross axis (top). Alternate name: start (not widely supported). 
