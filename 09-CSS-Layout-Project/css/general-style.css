@@ -1,0 +1,212 @@
+* {
+  font-family: var(--font-family);
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  height: 108px;
+}
+
+.header-wrapper{
+  display: flex;
+  padding: 32px 16px;
+  max-width: var(--max-width);
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  height: 42px;
+}
+
+.navigation-tag{
+  height: 42px;
+  display: flex;
+}
+
+.navigation-list{
+  display: flex;
+  column-gap: 40px;
+  align-items: center;
+}
+
+.navigation-list li {
+  font-size: 1rem;
+  line-height: 1.5rem;  
+}
+
+.navigation-list li a {
+  text-decoration: none;
+  font-family: var(--font-family);
+  color: #3b3c4a;
+  transition: color 0.5s;
+}
+
+.navigation-list li a:hover {
+  color: var(--primary-color);
+}
+
+.search-input {
+  min-width: 166px;
+  min-height: 36px;
+  border-radius: 4px;
+  background-color: #f4f4f5;
+  border: 1px solid rgba(255, 255,  255, 0);
+  text-indent: 20px;
+}
+
+.search-input::placeholder{
+  font-size: 14px;
+  line-height: 20px;
+  color: #A1A1AA;
+}
+
+.search-input:focus{
+  border: 1px solid var(--primary-color);
+  outline: none;
+  color: #3b3c4a;
+} 
+
+.search-container{
+  position: relative;
+}
+
+.search-icon{
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  pointer-events: none;
+}
+
+.main-section{
+  padding: 16px;                                       /* The header-wrapper had the same padding */
+  max-width: var(--max-width);
+  margin: auto;                                                  /* after 1280px (--max-width) the main section should align to the center of the page */
+}
+
+
+.hero-section {
+  position: relative;                    /* So that hero description align properly inside hero section */
+}
+
+
+.hero-image{
+  min-height: 600px;
+  background-image: url(/09-CSS-Layout-Project/images/hero.png);
+  background-repeat: no-repeat;                                     /* Background image should not repeat */
+  background-size: cover;                                           /* Background image should cover the whole area */
+  border-radius: 16px; 
+  border: 1px solid rgba(255, 255,  255, 0);                    /* To remove any border added by browser. We are making border trasnparent */
+  background-position: center;                                   /* So that the image is visible on mobile device in a good manner */
+}
+
+.hero-description{
+  width: 600px;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  box-shadow: 0 12px 24px -6px rgba(24, 26, 42, 0.12), inset 0 0 0 1px #e8e8ea;            /* To add shadows and give curve */
+  padding: 40px;
+
+  /* For aligning hero description properly inside hero section */
+  position: absolute;
+  top: 360px;
+  left: 64px;
+}
+
+.hero-badge{
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  padding: 8px 12px;
+  border-radius: 0.5rem;
+}
+
+.badge-container{                                    /* Span is a inline element so we need to apply height and margin to parent element. Otherwise the span margin will merge with others */
+  min-height: 28px;
+  margin-bottom: 16px;
+}
+
+.article-details h1 a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: var(--heading-font-color);
+}
+
+.author-section{
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  font-size: 1rem;
+  color: #97989f;
+  margin-top: 24px;
+}
+
+.author-image{
+  width: 40px;
+  height: auto;
+}
+
+.author-name {
+  font-weight: 500;
+}
+
+
+
+/* Latest posts */
+.blogs-section {
+  margin-top: 10rem;
+}
+
+.blogs-section h1 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.posts {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.single-post {
+  flex-basis: 32%;
+  padding: 16px;
+  border: 1px solid #e8e8ea;
+  border-radius: 0.75rem;
+}
+
+.single-post img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.single-post .article-details{
+  padding: 24px 8px;
+}
+
+.single-post .hero-badge{
+  background-color: rgba(75, 107, 251, 0.05);
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+.single-post h2 a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #181A2A;
+}
+
+.single-post .author-section img{
+  width: 36px;
+  height: auto;
+}
+
+

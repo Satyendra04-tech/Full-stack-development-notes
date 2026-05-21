@@ -1,0 +1,35 @@
+.header-wrapper{
+  width: 100%;
+}
+
+.navigation-tag{
+  display: none;
+}
+
+.hero-image{
+  min-height: 250px;
+}
+
+.hero-section {
+  position: static;
+}
+
+.hero-description{
+  width: 80%;
+  padding: 20px;
+  left: 10%;
+  top: 300px;
+}
+
+.hero-description h1 a {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.blogs-section {
+  margin-top: 16rem;
+}
+
+.single-post {
+  flex-basis: 100%;
+}
