@@ -1,0 +1,101 @@
+<!-- 
+1. Create a Form:
+        - Use the provided HTML structure to create a form with an id of "registration-form". 
+          This form should contain several types of inputs and a submission button.
+
+2. Add Input Elements with Labels:
+        - Include the following input elements with labels in the form:
+                * Text input for "Username" (type="text").
+                * Password input for "Password" (type="password").
+                * URL input for "Website URL" (type="url").
+                * Email input for "Email Address" (type="email").
+                * Telephone input for "Telephone" (type="tel").
+
+3. Apply Detailed Styles :
+        - Style the input elements (type="text", type="password", type="url", type="email", type="tel") to:
+                * Display: block
+                * Width: 200px
+                * Padding: 8px
+                * Margin: 10px 0
+
+        - Style the submission button to:
+                * Padding: 10px 20px
+                * Background Color: #007BFF
+                * Text Color: white
+                * Border: none
+                * Cursor: pointer
+                * Transition: background-color 0.3s ease
+                * Add a hover effect to the button that changes the background color to #0056b3.
+
+4. Form Submission Button:
+        - Include a submit button at the end of the form with text "Register". 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Input Types and Button Styling Exercise</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+label {
+    margin-top: 20px;
+}
+
+
+#registration-form input{
+    display: block;
+    width: 200px;
+    padding: 8px;
+    margin: 10px 0px;
+    }
+    
+button{
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+
+<form>
+    <div id="registration-form">
+        <label for="username">Username</label>
+        <input id="username" type="text" name="username" placeholder="Your Username..." />
+        
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" placeholder="Your Password..." />
+        
+        <label for="website">Website URL</label>
+        <input id="website" type="url" name="website" placeholder="Your Website..." />
+        
+        <label for="email">Email Address</label>
+        <input id="email" type="email" name="email" placeholder="Your Email..." />
+        
+        <label for="phone">Telephone</label>
+        <input id="phone" type="tel" name="phone" placeholder="Your Phone..." />
+    </div>
+    <button type="submit">Register</button>
+</form>
+            
+</body> 
+</html>
