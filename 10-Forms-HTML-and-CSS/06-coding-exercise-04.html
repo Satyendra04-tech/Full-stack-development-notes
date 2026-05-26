@@ -1,0 +1,94 @@
+<!-- 
+1. Create a Form:
+        - Use the provided HTML structure to create a form with an id of "selection-form". 
+          This form will include groups of radio buttons and checkboxes for user input.
+
+2. Add Radio Buttons and Checkboxes:
+        - Include a group of radio buttons for a user to select one option from a set, such as choosing a preferred contact method.
+        - Include a group of checkboxes for a user to select multiple options, such as choosing interests.
+
+3. Label Groups and Options:
+        - Each group of radio buttons or checkboxes should be accompanied by a descriptive label explaining the choice.
+        - Each individual option should also have a label for better accessibility.
+
+4. Apply Styles in style.css:
+        - Style the radio buttons and checkboxes to enhance visual interaction and ensure they are easily clickable.
+        - Use CSS to create a cohesive look that matches the form's design, possibly customizing the appearance of the selection 
+          controls. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radio Buttons and Checkboxes Exercise</title>
+    <style>
+
+*{
+    font-family: Sans-Serif;
+}
+
+
+#selection-form{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+label{
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input{
+    margin: 5px;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: lightblue;
+}
+
+    </style>
+</head>
+<body>
+  <!-- Write HTML Here -->
+  <form id="selection-form">
+      <h4>Preferred contact method:</h4>
+      <label form="phone">
+      <input id="phone" type="radio" name="contact" value="phone" /> Phone
+      </label>
+      
+      <label form="email">
+      <input id="email" type="radio" name="contact" value="email" /> Email
+      </label>
+      
+      <label form="sms">
+      <input id="sms" type="radio" name="contact" value="sms" /> SMS
+      </label>
+      
+
+      <h4>Agree of Disagree</h4>
+      <div>
+          <label form="agree">
+          <input id="agree" type="checkbox" name="term" /> I agree
+          </label>
+          
+          <label form="disagree">
+          <input id="disagree" type="checkbox" name="term" /> I disagree
+          </label>
+      </div>
+      
+      <button type="submit">Submit</button>
+      
+  </form>
+</body>
+</html>
