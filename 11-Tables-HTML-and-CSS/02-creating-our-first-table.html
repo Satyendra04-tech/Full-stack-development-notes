@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Table Example</title>
+</head>
+<style>
+  table{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  td, th{
+    text-align: center;
+    border: 1px solid black;
+    padding: 8px;
+  }
+
+  th{
+    background-color: aqua;
+  }
+
+  tr{
+    background-color: beige;
+  }
+
+
+  /* Adjust column widths */
+  th:first-child , td:first-child{
+    width: 50%;                                 /* First column with wider width */
+  }
+
+  th:nth-child(2),
+  td:nth-child(2),
+  th:nth-child(3),
+  td:nth-child(3){
+    width: 25%;                                /* Second and third columns with smaller width */
+  }
+
+
+  /* Adjust row height for the second row */
+  tr:nth-child(2){
+    height: 50px;                                 /* Increases height for this row */
+    background-color: seagreen;
+  }
+
+
+
+</style>
+<body>
+  <h1>Introduction to HTML Tables</h1>
+
+   <!-- Simple Table Structure -->
+  <table>
+
+    <caption>My Contact List</caption>
+    <!-- Table Header -->
+    <thead>                                 <!--The <thead> tag clearly defines the table's header section, improving the semantic clarity of the HTML. This is useful for accessibility, making it easier for screen readers to identify and navigate table headers.-->
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Age</th>
+    </tr>
+    </thead>
+
+
+    <!-- Table Rows with Data -->
+    <tbody>
+    <tr>
+      <td>Satyendra</td>
+      <td>Jha</td>
+      <td>24</td>
+    </tr>
+
+    <tr>
+      <td>John</td>
+      <td>Wick</td>
+      <td>50</td>
+    </tr>
+
+    <tr>
+      <td>Jane</td>
+      <td>Doe</td>
+      <td>35</td>
+    </tr>
+    </tbody>
+  </table>
+</body>
+</html>

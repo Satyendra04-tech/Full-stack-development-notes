@@ -1,0 +1,91 @@
+<!-- 
+1. Create a Table:
+        - Use the provided HTML structure to construct a table that includes a header (thead), a body (tbody), and a footer (tfoot).
+
+2. Populate the Table:
+        - Include at least three columns in your table, such as "Product Name", "Quantity", and "Price".
+        - Add multiple rows of data in the body section to represent different products.
+        - Use the header to label each column clearly.
+        - Summarize or provide additional information in the footer, such as the total price.
+
+3. Apply Styles in style.css:
+        - Style the table to improve its aesthetics and readability:
+        - Set the width of the table to 100% to utilize the available space.
+        - Enhance the header and footer with distinct background colors and text styling.
+        - Ensure the body of the table is clearly readable with sufficient padding in cells. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table Styling Exercise</title>
+    <style>
+table{
+    font-family: Arial;
+    padding: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+th{
+    background-color: aqua;
+}
+
+
+td{
+    background-color: seagreen;
+}
+
+
+tfoot td{
+    background-color: pink;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <!-- Write HTML here -->
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Bat</td>
+                <td>2</td>
+                <td>$400</td>
+            </tr>
+            <tr>
+                <td>Ball</td>
+                <td>2</td>
+                <td>$40</td>
+            </tr>
+            </tr>
+            <tr>
+                <td>Gloves</td>
+                <td>2</td>
+                <td>$400</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+            <td colspan="2">Total Price</td>
+            <td>$840</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

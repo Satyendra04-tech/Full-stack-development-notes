@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customizing Table Headers in HTML & CSS</title>
+  <style>
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+h2 {
+  margin: 60px 0px 0px;
+}
+
+
+/* General Table Styling */
+table {
+  width: 100%;
+  /* 
+  The CSS property border-collapse: collapse; is used to merge the borders of adjacent table cells into a single border, 
+  rather than keeping them separate. Here's the role of this property:
+  */
+  border-collapse: collapse;
+  margin: 0 0 30px 0;
+}
+
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+tbody tr{
+  background-color: #f2f2f2;
+}
+
+/* Style the Table Headers */
+th {
+  background-color: lightblue;
+}
+
+.vertical-headers th:nth-child(1) {
+  text-align: left;
+  background-color: lightgoldenrodyellow;
+}
+
+/* Combined Vertical and Horizontal Headers */
+.combined-table th {
+  background-color: lightcyan;
+}
+
+caption {
+  margin-bottom: 15px;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Customizing Table Headers</h1>
+
+
+   <!-- Basic Table with Horizontal Headers -->
+    <section>
+      <h2>Basic Horizontal Table Headers</h2>
+      <table class="basic-table">
+        <caption>Product Price and Stock</caption>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Stock</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Widget A</td>
+            <td>$50</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>Widget B</td>
+            <td>$70</td>
+            <td>150</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+
+    <!-- Table with Vertical Headers -->
+     <section>
+      <h2>Vertical Table Headers</h2>
+      <table class="vertical-headers">
+        <caption>
+          Quarterly Revenue and Expense
+        </caption>
+        <tbody>
+          <tr>
+            <th>Revenue</th>
+            <td>$80K</td>
+            <td>$85K</td>
+            <td>$90K</td>
+          </tr>
+          <tr>
+            <th>Expenses</th>
+            <td>$50K</td>
+            <td>$55K</td>
+            <td>$60K</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+
+    <!-- Horizontal and Vertical Headers Combined -->
+      <section>
+      <h2>Combined Vertical and Horizontal Headers</h2>
+      <table class="combined-table">
+        <caption>
+          Quarterly Revenue and Expense
+        </caption>
+        <thead>
+          <tr>
+            <th>Metrics</th>
+            <th>Quater 1</th>
+            <th>Quater 2</th>
+            <th>Quater 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Revenue</th>
+            <td>$80K</td>
+            <td>$85K</td>
+            <td>$90K</td>
+          </tr>
+          <tr>
+            <th>Expenses</th>
+            <td>$50K</td>
+            <td>$55K</td>
+            <td>$60K</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  
+</body>
+</html>
