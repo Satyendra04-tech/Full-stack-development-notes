@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String, number and boolean</title>
+  <script>
+    // String: a sequence of characters (text)
+    // String values are always between quotes
+    // Double quotes and single qoutes mean the same thing
+
+    let myname = "Satyendra Jha";
+    let greeting = "Hello";                       // Since this is inside double quotes this will be treated like a string by javaScript you cannot perform numerical operations on this
+
+    let numberString = "1234";
+    let anotherString = "1";
+
+     // Displaying the string values
+     console.log(myname);                        // Output: Satyendra Jha
+     console.log(greeting);                      // Output: Hello
+
+      // String concatenation (combining strings)
+      let fullgreeting = greeting + " " + myname + ".";         // Output: Hello Satyendra Jha.
+      console.log(fullgreeting);
+
+      // Trying to add numbers strings
+      console.log(typeof numberString);                       // Output: string
+      console.log(numberString + anotherString);             // Output: 12341
+
+
+
+      /* Number: represents numeric values */
+      let age = 25;
+      let price = 19.99;
+
+      // Displaying number values
+      console.log(typeof age);                        // Output: number
+      console.log(price);                             // Output: 19.99
+
+      // Arithmetic operations with numbers
+      let totalCost = price * 3;                  // Multiply price by 3
+      let discount = price / 2;
+      console.log(totalCost);                    // Output: 59.97
+      console.log(discount);                     // Output: 9.995
+
+
+
+      /* Boolean: represents true or false values */
+      let isStudent = true;
+      let isTeacher = false;
+
+      // Displaying boolean values
+      console.log(typeof isStudent);                     // Output: true
+      console.log(isTeacher);                           // Output: false
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
