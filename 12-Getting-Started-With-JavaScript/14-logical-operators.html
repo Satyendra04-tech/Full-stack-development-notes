@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logical Operators</title>
+  <script>
+    let num1 = 11;
+    let str1 = "10";
+
+    // Logical AND && (all conditions to be true)
+    console.log(num1 < 12 && str1 > 8);                                     // Output : true
+
+
+    //  OR || (one of the conditions is true)
+    console.log(num1 > 12 || str1 < 8 || num1 === 10);                    // Output : false
+
+
+    // Nullish Coalescing (??)
+    let name = null;
+    console.log(name?? "Default value");                    //if the name variable is null or undefined then the nullish Coalescing operator will print the value that is assigned after '??'. 
+    
+    let age = 25;
+    console.log(age?? 10);                              //If the name var is not null or not undefined then the original value will be printed.
+
+
+    // Nullish assignment (??=)
+    let name1 = null;        
+    name1 ??= "john";
+    console.log(name1);                        // If the name1 var is null or undefined then the Nullish assignment operator will assign a new value to the name operator.
+
+    let name2 = "sia";
+    name2 ??= "john";
+    console.log(name2);                  // If the name1 var is !null or !undefined then the original value will be printed. 
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
