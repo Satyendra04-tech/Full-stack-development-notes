@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects in Javascript</title>
+  <script>
+    // Example of defininig all the properties of a car
+let carBrand = "BMW";
+let carModel = "7 Series";
+let carColor = "White";
+let carMake = 2024;  
+
+
+/* All these properties belong to the same entity Car
+Types of cars will probably have all these properties
+There is a way to group all these properties of a Car into a single group or object called Car */
+
+let car = {
+  brand: "BMW",
+  carmodel: "7 Series",
+  carcolor: "White",
+  carmake: 2024,
+  "car owner": "Satyendra",                   // Do not do this. As per industry standard we should not use " " for assigning a property
+};
+
+
+// Now each property of the car can be accessed using the car Object or group
+console.log("Car Model: ", car.carmodel);
+console.log("Car Brand: ", car.brand);
+console.log("Car owner: ", car["car owner"]);             // We used " " for assigning car owner's name so that's why we used [" "] for accessing this proerty
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

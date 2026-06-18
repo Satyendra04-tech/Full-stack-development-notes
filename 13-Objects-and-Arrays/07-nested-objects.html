@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Objects</title>
+  <script>
+
+    // Initial car object
+    let car = {
+      brabd: "BMW",
+      model: "7 Series",
+      color: "White",
+      make: 2024,
+      owner: {
+        name: "Satyendra",
+        age: 25,
+      },
+    };
+
+
+    // Example of mutability - changing a property
+    console.log("Original car color: ", car.color);                 // White
+
+    car.color = "Red";                                             // Modifying the color property
+    console.log("Updated car color: ", car.color);                 // Red
+
+
+    // Spread operator dose not work with nested objects
+    let newCar = { ...car };
+    newCar.owner.name = "John";
+    console.log("Old car owner name: ", car.owner.name);
+    console.log("New car owner name: ", newCar.owner.name);            // Even after using spread operator the name of the old car owner got changed. So it means the spread operator dosen't work with nested objects
+
+
+    // For nested objects we have to use structuredClone operator
+    let newCar2 = structuredClone(car);
+    newCar2.owner.name = "Jimmy";
+    console.log("Old car owner name: ", car.owner.name);
+    console.log("New car2 owner name: ", newCar2.owner.name);          // After using 'structuredClone' funstion we the old car owner name dosen't get changed even if we changed the newCar2 owner's name. But this fucntion dosen't work with all the browsers.
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

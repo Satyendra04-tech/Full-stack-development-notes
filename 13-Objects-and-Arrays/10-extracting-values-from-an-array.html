@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extracting Values From an Array</title>
+  <script>
+
+    let fruits = ["Apple", "Banana", "Orange", "Mango"];
+    console.log(fruits);
+
+    // if we want to extract a particular value from this nested fruits, we can do like this  
+    console.log("Extracting Orange from fruits: ", fruits[2]);                                       // Output: Orange
+    console.log("Extracting Apple from fruits: ", fruits[0]);                                        // Output: Apple
+
+
+
+    let numbers = [10, 20, 30, 40, 50];
+    console.log(numbers);
+
+    // if we want to extract a particular number from this nested numbers, we can do like this 
+    console.log("Extracting 20 from numbers: ", numbers[1]);                                      // Output: 20
+    console.log("Extracting 50 from numbers: ", numbers[4]);                                      // Output: 50
+
+
+
+    let mixedArrays = [
+      "hello",
+      25,
+      true,
+      null,
+      {name: "Satyendra"},
+      [2,3,4,5],
+    ];
+    console.log(mixedArrays);
+
+    // Extracting a string
+    console.log("Extracting a string: ", mixedArrays[0]);                                // Output: hello
+
+
+    // Extracting an object property
+    console.log("Extracting an object property: ", mixedArrays[4]["name"]);              // Output: Satyendra
+    //OR
+    console.log("Extracting an object property: ", mixedArrays[4].name);                // Output: Satyendra
+
+
+    // Extracting a nested array
+    console.log("Extracting a nested array: ", mixedArrays[5][2]);                     // Output: 4
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
