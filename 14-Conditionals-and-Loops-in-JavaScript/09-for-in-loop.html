@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>for in Loop</title>
+  <script>
+
+// Example 1: Using 'for...in' with an array
+
+    let fruits = ["Apple", "Mango", "Banana", "Orange", "Grape"];
+    for (index in fruits){
+      console.log("Index " + index + ':', fruits[index]);
+    } 
+    // Output:
+    // Index 0: Apple
+    // Index 1: Banana
+    // Index 2: Orange
+    // Index 3: Mango
+
+
+// Example 2: Using 'for...in' to loop through an object
+    let car = {
+      brand: "BMW",
+      model: "7 Series",
+      color: "white",
+      year: 2025
+    };
+
+    for (property in car){
+      console.log(property + ':', car[property])
+    }
+    // Output:
+    // brand: BMW
+    // model: 7 Series
+    // color: White
+    // year: 2024
+
+
+// Example 3: Demonstrating the potential issue with 'for...in' for arrays
+    let mixedArray = ["Hello", 25, true, null, {name: "John"}];
+    mixedArray.customProperty = "I am a custom property";
+
+    for (key in mixedArray){
+      console.log(key + ":", mixedArray[key]);
+    }
+    // Output:
+    // 0: Hello
+    // 1: 25
+    // 2: true
+    // 3: null
+    // 4: [object Object]
+    // customProperty: I am a custom property
+
+    
+/* Explanation:
+- 'for...in' loops over both indices and any added properties in an array.
+- In this example, 'customProperty' is also included in the loop, which is usually undesirable for arrays.
+- That's why it's safer to use 'for...of' or other array-specific methods for arrays.
+*/
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

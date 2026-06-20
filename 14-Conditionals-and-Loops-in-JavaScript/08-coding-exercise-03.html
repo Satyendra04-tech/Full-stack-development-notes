@@ -1,0 +1,58 @@
+<!-- 
+Create a for loop to iterate from 1 to 10, storing the sum of these numbers in a variable named totalSum. 
+Display the final sum after the loop completes. Additionally, within the same loop, create a list of strings representing 
+each number prefixed by 'Number: ', and store these strings in an array named numberDescriptions. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop Exercise</title>
+</head>
+<script>
+
+let totalSum = 0;
+let numberDescriptions= [];
+for (let i = 1; i <= 10; i++){
+    totalSum += i;
+    numberDescriptions.push(`Number: ${i}`)
+}
+
+</script>
+<body>
+    <h1>For Loop Exercise</h1>
+    <div>
+        <p>Total Sum: <span id="outputTotalSum"></span></p>
+        <p>Number Descriptions:</p>
+        <ul id="outputNumberDescriptions"></ul>
+    </div>
+
+
+    <script>
+  /* just to show the output in the browser */
+      function displayValue(id, value) {
+    try {
+        if (typeof value === 'number') {
+            document.getElementById(id).textContent = value;
+        } else if (Array.isArray(value)) {
+            const list = document.getElementById(id);
+            value.forEach(item => {
+                let listItem = document.createElement('li');
+                listItem.textContent = item;
+                list.appendChild(listItem);
+            });
+        }
+    } catch (e) {
+        console.error("Error displaying value for " + id + ": " + e.message);
+    }
+}
+
+// Display the total sum and number descriptions
+displayValue('outputTotalSum', totalSum);
+displayValue('outputNumberDescriptions', numberDescriptions);
+
+    </script>
+</body>
+</html>
